@@ -1,12 +1,9 @@
-import os
-import unittest
+from utils import BaseTestClass
 from algorithms.algorithms.bubble_sort import bubble_sort
 
 
-class TestBubbleSort(unittest.TestCase):
-    def test_bubble_sort(self):
-        number_array = [1, 2, 7, 9, 3, 23, 1, 0, 6, 8]
+class TestBubbleSort(BaseTestClass):
 
-        sorted_array = [0, 1, 1, 2, 3, 6, 7, 8, 9, 23]
-        bubbled = bubble_sort(number_array)
-        self.assertEqual(bubbled, sorted_array)
+    def test_bubble_sort(self):
+        bubbled_list = bubble_sort(self.test_number_list)
+        self.assertEqual(bubbled_list, self.expected_list)
