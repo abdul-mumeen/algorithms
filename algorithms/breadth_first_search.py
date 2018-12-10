@@ -8,11 +8,11 @@ def breadth_first_search(graph_object, starting_vertex):
     visited[starting_vertex] = True
 
     while queue:
-        vertex = queue.pop(0)
-        output_sequence.append(vertex)
+        next_vertex = queue.pop(0)
+        output_sequence.append(next_vertex)
 
-        for index in graph_object.graph[vertex]:
-            if visited[index] == False:
-                queue.append(index)
-                visited[index] = True
+        for vertex in graph_object.graph[next_vertex]:
+            if visited[vertex] == False:
+                queue.append(vertex)
+                visited[vertex] = True
     return output_sequence
