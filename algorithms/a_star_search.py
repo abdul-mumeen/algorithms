@@ -14,7 +14,7 @@ class PriorityQueue:
     def get(self):
         return heapq.heappop(self.elements)[1]
 
-    def emptied(self):
+    def reset(self):
         self.elements = []
 
 
@@ -35,7 +35,7 @@ def a_star_search(graph, start, goal):
 
     while not frontier.empty():
         current = frontier.get()
-        frontier.emptied()
+        frontier.reset()
         path.append(current)
 
         if current == goal:
