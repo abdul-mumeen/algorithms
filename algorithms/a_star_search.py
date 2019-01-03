@@ -14,6 +14,9 @@ class PriorityQueue:
     def get(self):
         return heapq.heappop(self.elements)[1]
 
+    def reset(self):
+        self.elements = []
+
 
 def heuristic(a, b):
     (x1, y1) = a
@@ -24,6 +27,7 @@ def heuristic(a, b):
 def a_star_search(graph, start, goal):
     frontier = PriorityQueue()
     frontier.put(start, 0)
+    path = []
     came_from = {}
     cost_so_far = {}
     came_from[start] = None
@@ -31,6 +35,8 @@ def a_star_search(graph, start, goal):
 
     while not frontier.empty():
         current = frontier.get()
+        frontier.reset()
+        path.append(current)
 
         if current == goal:
             break
@@ -43,4 +49,4 @@ def a_star_search(graph, start, goal):
                 frontier.put(next, priority)
                 came_from[next] = current
 
-    return came_from, cost_so_far
+    return came_from, cost_so_far, path
