@@ -1,5 +1,5 @@
 from utils import BaseTestClass
-from algorithms.algorithms.insertion_sort import insertion_sort
+from algorithms.insertion_sort import insertion_sort
 
 
 class TestInsertionSort(BaseTestClass):

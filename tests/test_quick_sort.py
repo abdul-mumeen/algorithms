@@ -1,5 +1,5 @@
 from utils import BaseTestClass
-from algorithms.algorithms.quick_sort import quick_sort
+from algorithms.quick_sort import quick_sort
 
 
 class TestQuickSort(BaseTestClass):

@@ -1,5 +1,5 @@
 from utils import BaseTestClass
-from algorithms.algorithms.bubble_sort import bubble_sort
+from algorithms.bubble_sort import bubble_sort
 
 
 class TestBubbleSort(BaseTestClass):

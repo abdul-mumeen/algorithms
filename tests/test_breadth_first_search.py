@@ -1,6 +1,6 @@
 import unittest
 from utils import Graph
-from algorithms.algorithms.breadth_first_search import breadth_first_search
+from algorithms.breadth_first_search import breadth_first_search
 
 
 class TestBreadthFirstSearch(unittest.TestCase):

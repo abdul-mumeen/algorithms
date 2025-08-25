@@ -1,6 +1,6 @@
 import unittest
 from utils import Graph
-from algorithms.algorithms.depth_first_search import depth_first_search
+from algorithms.depth_first_search import depth_first_search
 
 
 class TestDepthFirstSearch(unittest.TestCase):

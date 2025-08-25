@@ -1,5 +1,5 @@
 from utils import BaseTestClass
-from algorithms.algorithms.merge_sort import merge_sort
+from algorithms.merge_sort import merge_sort
 
 
 class TestMergeSort(BaseTestClass):
