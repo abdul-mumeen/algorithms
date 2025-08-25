@@ -1,7 +1,7 @@
 import unittest
 
-from algorithms.algorithms.a_star_search import a_star_search
-from algorithms.algorithms.a_star_search_util import SquareGridWithWeight
+from algorithms.a_star_search import a_star_search
+from algorithms.a_star_search_util import SquareGridWithWeight
 
 
 class TestBreadthFirstSearch(unittest.TestCase):
